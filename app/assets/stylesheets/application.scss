@@ -18,17 +18,24 @@
     padding: 0;
    	.main {
       header {
+        background: #282; // why does this not work when envoked by the class .main first?
         text-align: center;
         @media (min-width: 30em) {
       	    text-align: left;
         }
-        background: #282;
         margin: 0;
         h1 {
          display: none;
         }
       }
   	}
+ }
+
+// header background works when invoked inside of body, but NOT if you try to add in the class-ification
+ body {
+   header {
+     background: #282;
+   }
  }
 
  .content {
