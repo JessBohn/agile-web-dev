@@ -18,8 +18,15 @@
       // to hold the entire image, since it's floated
       &::after {
         clear: both;
-        content: " ";
         display: block;
+      }
+      h2.title {
+        margin-top: 0;
+        margin-bottom: 0;
+      }
+      p {
+        margin-top: 0;
+        margin-bottom: 0;
       }
       img {
         float: left;
