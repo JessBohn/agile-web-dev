@@ -24,7 +24,7 @@ class LineItemsControllerTest < ActionDispatch::IntegrationTest
 
     assert_select 'h2','Your Pragmatic Cart'
     assert_select 'main' do
-      assert_select 'li','Programming Ruby 1.9'
+      assert_select 'li',"1 \u00D7 Programming Ruby 1.9"
     end
   end
 
